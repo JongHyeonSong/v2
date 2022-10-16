@@ -34,11 +34,12 @@ const onSlideChange = () => {
     <h3>im main</h3>
 
     <swiper
+    class="swp"
       :loop="true"
       :modules="[Navigation, Pagination, Scrollbar, A11y, Autoplay]"
       :slides-per-view="1"
       :space-between="50"
-      :autoplay="{ delay: 500, disableOnInteraction: false }"
+      :autoplay="{ delay: 1500, disableOnInteraction: false }"
       navigation
       :pagination="{ clickable: true }"
       :scrollbar="{ draggable: true }"
@@ -62,7 +63,13 @@ const onSlideChange = () => {
 p {
   background-color: pink;
   width: 200px;
-  height: 565px;
+  height: 365px;
   color: black;
+}
+
+.swp{
+  display: block;;
+  background-color: gray;
+  max-width: 500px;
 }
 </style>
